@@ -1,2 +1,2 @@
 # S3Net_CD
-Superpixel-Guided Self-Supervised Learning Network for Change Detection in Multitemporal Image Change Detection
+Code for the paper "Superpixel-Guided Self-Supervised Learning Network for Change Detection in Multitemporal Image Change Detection", which has been submitted to IEEE Geoscience and Remote Sensing Letters.
