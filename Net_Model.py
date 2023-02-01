@@ -45,7 +45,6 @@ class SiameseNet(nn.Module):
     def forward(self, x1, x2):
         batch_size = x1.size()[0]
 
-        # 特征相减
         x1 = self.input_forward(x1)[3]
         x2 = self.input_forward(x2)[3]
         x = abs(torch.sub(x1, x2))
