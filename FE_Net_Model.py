@@ -3,7 +3,7 @@ import torch
 import torch.nn as nn
 from Net_Model import SiameseNet
 
-MODEL_PATH = os.path.join('Data\Guangzhou', 'Pretrained_Model.pt')
+MODEL_PATH = os.path.join('Data\Guangzhou', 'Pretrained_model.pt')
 
 class FE_Net(nn.Module):
 
