@@ -27,8 +27,6 @@ MAX_POCH = 1000
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 torch.cuda.set_device(device)
 
-TIME = datetime.now().strftime('%Y_%m_%d_%H_%M_%S')
-
 DATA_DIR = 'Data\Guangzhou'
 
 DATA_PATH = os.path.join(DATA_DIR, 'pretext_data.npy')
@@ -37,7 +35,7 @@ LABEL_PATH = os.path.join(DATA_DIR, 'pretext_label.npy')
 TRAIN_INDICES = os.path.join(DATA_DIR, 'train_indices.npy')
 VAL_INDICES = os.path.join(DATA_DIR, 'val_indices.npy')
 
-SAVE_MODEL_PATH = os.path.join(DATA_DIR, TIME + '_model.pt')
+SAVE_MODEL_PATH = os.path.join(DATA_DIR, 'Pretrained_model.pt')
 
 
 train_dataset = MyDataSet(DATA_PATH, LABEL_PATH, TRAIN_INDICES,
